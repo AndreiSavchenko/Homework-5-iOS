@@ -15,14 +15,14 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Homework_5_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8xJ-CD-F3D" userLabel="Scroll View 1">
-                                <rect key="frame" x="0.0" y="20" width="375" height="1131"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xJ-CD-F3D" userLabel="Scroll View 1">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKU-8W-vgh" userLabel="Container">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1400"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapaMagicLogo" translatesAutoresizingMaskIntoConstraints="NO" id="jNx-eM-Nek">
                                                 <rect key="frame" x="20" y="20" width="100" height="100"/>
@@ -277,8 +277,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BVT-at-LcB" userLabel="Scroll View 2">
-                                                <rect key="frame" x="20" y="462" width="860" height="300"/>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVT-at-LcB" userLabel="Scroll View 2">
+                                                <rect key="frame" x="20" y="462" width="375" height="300"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfM-Qh-VWG" userLabel="Container 2">
                                                         <rect key="frame" x="0.0" y="0.0" width="860" height="300"/>
@@ -333,7 +333,6 @@
                                                     </view>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="860" id="8ye-Ze-9AM"/>
                                                     <constraint firstAttribute="trailing" secondItem="zfM-Qh-VWG" secondAttribute="trailing" id="NME-Ra-gZa"/>
                                                     <constraint firstItem="zfM-Qh-VWG" firstAttribute="top" secondItem="BVT-at-LcB" secondAttribute="top" id="g6r-7K-95x"/>
                                                     <constraint firstItem="zfM-Qh-VWG" firstAttribute="leading" secondItem="BVT-at-LcB" secondAttribute="leading" id="jyl-fL-IA0"/>
@@ -358,23 +357,20 @@
                                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cv-G7-L2e">
-                                                <rect key="frame" x="20" y="834" width="335" height="268"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="268" id="Syg-Tu-CbJ"/>
-                                                </constraints>
-                                                <string key="text">Мобільний додаток для слідкування за рухом громадського транспорту в м. Черкаси у реальному часі. MapaMagic надає дані про рух тролейбусів, автобусів та дає можливість:
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJG-74-5wA" userLabel="textBig">
+                                                <rect key="frame" x="20" y="834" width="335" height="385.5"/>
+                                                <mutableString key="text">Мобільний додаток для слідкування за рухом громадського транспорту в м. Черкаси у реальному часі. MapaMagic надає дані про рух тролейбусів, автобусів та дає можливість:
 
 - слідкувати за маршрутами, які проходять через Вашу зупинку або будь-які інші зупинки міста
 - бачити час прибуття найближчих 3-х транспортних засобів по маршруту
 - відстежувати рух транспорту в реальному часі
 - дізнаватися більше про зупинки всього маршруту, щоб планувати своє пересування містом.
 
-Система також надає дані про рух тролейбусів та маршруток.</string>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
+Система також надає дані про рух тролейбусів та маршруток.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -388,6 +384,7 @@
                                             <constraint firstAttribute="trailing" secondItem="JjW-Mg-Xpw" secondAttribute="trailing" constant="20" id="6ot-4r-Pi7"/>
                                             <constraint firstItem="WeT-mw-vgR" firstAttribute="top" secondItem="jNx-eM-Nek" secondAttribute="bottom" constant="20" id="74g-Ob-Bg3"/>
                                             <constraint firstItem="cV0-oe-6oC" firstAttribute="leading" secondItem="bKU-8W-vgh" secondAttribute="leading" constant="20" id="89n-8L-njM"/>
+                                            <constraint firstAttribute="height" constant="1400" id="8Jb-Ae-AZu"/>
                                             <constraint firstAttribute="trailing" secondItem="xAi-5v-Xww" secondAttribute="trailing" constant="20" id="DzY-Ow-ryS"/>
                                             <constraint firstItem="BVT-at-LcB" firstAttribute="leading" secondItem="bKU-8W-vgh" secondAttribute="leading" constant="20" id="GaK-fv-J2j"/>
                                             <constraint firstItem="Dh4-tM-VYz" firstAttribute="top" secondItem="bKU-8W-vgh" secondAttribute="top" constant="20" id="Gf3-QW-44L"/>
@@ -395,12 +392,12 @@
                                             <constraint firstItem="3VN-ol-1Zg" firstAttribute="top" secondItem="hpE-C4-dqY" secondAttribute="bottom" constant="23" id="HXu-Ru-RG5"/>
                                             <constraint firstItem="8cf-mS-tc6" firstAttribute="top" secondItem="BVT-at-LcB" secondAttribute="bottom" constant="20" id="IHg-jN-Kb8"/>
                                             <constraint firstItem="hpE-C4-dqY" firstAttribute="top" secondItem="Dh4-tM-VYz" secondAttribute="bottom" id="JM4-qr-D9f"/>
+                                            <constraint firstAttribute="trailing" secondItem="tJG-74-5wA" secondAttribute="trailing" constant="20" id="L6A-bV-vZa"/>
                                             <constraint firstItem="hpE-C4-dqY" firstAttribute="leading" secondItem="jNx-eM-Nek" secondAttribute="trailing" constant="20" id="O5a-Ed-0H2"/>
                                             <constraint firstItem="EMx-AB-Qnq" firstAttribute="top" secondItem="cV0-oe-6oC" secondAttribute="bottom" constant="10" id="Oa2-l6-Mxe"/>
-                                            <constraint firstItem="9cv-G7-L2e" firstAttribute="leading" secondItem="bKU-8W-vgh" secondAttribute="leading" constant="20" id="Qag-zI-84O"/>
                                             <constraint firstItem="cV0-oe-6oC" firstAttribute="top" secondItem="b8I-0Z-pAp" secondAttribute="bottom" constant="20" id="TKS-hQ-dfU"/>
-                                            <constraint firstAttribute="height" constant="800" id="UeY-Rb-TK0"/>
                                             <constraint firstItem="mhX-Zc-JBI" firstAttribute="leading" secondItem="bKU-8W-vgh" secondAttribute="leading" constant="20" id="Ulb-Ge-byh"/>
+                                            <constraint firstItem="tJG-74-5wA" firstAttribute="top" secondItem="8cf-mS-tc6" secondAttribute="bottom" constant="20" id="WFW-Gl-czU"/>
                                             <constraint firstAttribute="trailing" secondItem="u4t-bs-BLB" secondAttribute="trailing" constant="20" id="WKE-PI-SwP"/>
                                             <constraint firstItem="3VN-ol-1Zg" firstAttribute="leading" secondItem="jNx-eM-Nek" secondAttribute="trailing" constant="20" id="XHi-Xo-GjS"/>
                                             <constraint firstItem="QSS-3m-Ofq" firstAttribute="leading" secondItem="8cf-mS-tc6" secondAttribute="trailing" constant="20" id="YJ6-dc-RKO"/>
@@ -415,10 +412,9 @@
                                             <constraint firstAttribute="trailing" secondItem="EMx-AB-Qnq" secondAttribute="trailing" constant="20" id="hov-R5-8LK"/>
                                             <constraint firstItem="JjW-Mg-Xpw" firstAttribute="top" secondItem="WeT-mw-vgR" secondAttribute="bottom" constant="20" id="rC7-A7-jeF"/>
                                             <constraint firstAttribute="trailing" secondItem="WeT-mw-vgR" secondAttribute="trailing" constant="20" id="sfU-EG-w6A"/>
-                                            <constraint firstItem="9cv-G7-L2e" firstAttribute="top" secondItem="8cf-mS-tc6" secondAttribute="bottom" constant="20" id="u8a-Xt-Tlp"/>
+                                            <constraint firstItem="tJG-74-5wA" firstAttribute="leading" secondItem="bKU-8W-vgh" secondAttribute="leading" constant="20" id="wB7-KO-MRQ"/>
                                             <constraint firstItem="u4t-bs-BLB" firstAttribute="leading" secondItem="bKU-8W-vgh" secondAttribute="leading" constant="20" id="wds-mG-RCh"/>
                                             <constraint firstItem="WeT-mw-vgR" firstAttribute="leading" secondItem="bKU-8W-vgh" secondAttribute="leading" constant="20" id="yoP-Yf-pqd"/>
-                                            <constraint firstAttribute="trailing" secondItem="9cv-G7-L2e" secondAttribute="trailing" constant="20" id="z2u-iS-y59"/>
                                             <constraint firstItem="u4t-bs-BLB" firstAttribute="top" secondItem="EMx-AB-Qnq" secondAttribute="bottom" constant="20" id="zTs-gh-xUW"/>
                                         </constraints>
                                     </view>
@@ -438,11 +434,11 @@
                             <constraint firstItem="8xJ-CD-F3D" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Yqh-I5-Mig"/>
                             <constraint firstItem="8xJ-CD-F3D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="djh-VL-yss"/>
                             <constraint firstItem="8xJ-CD-F3D" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fks-FL-IbS"/>
+                            <constraint firstItem="BVT-at-LcB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="swG-En-x6D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="375" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
